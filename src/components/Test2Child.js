@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+
 class Test2Child extends Component {
-    
-    render() {
+
+    render () {
         return (
             <div>
                 <h1>money : {this.props.amount}</h1>
-                <button onClick = {this.props.increment}>Next</button>
+                <button onClick = { () => this.props.increment(1000)}>Next</button>
             </div>
         )
     }
@@ -18,7 +19,7 @@ Test2Child.defaultProps = {
 
 Test2Child.propTypes = {
     amount    : PropTypes.number,
-    increment : PropTypes.func,
+    increment : PropTypes.func.isRequired,
 }
 
 

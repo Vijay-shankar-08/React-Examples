@@ -8,15 +8,15 @@ class Test2 extends Component {
             salary: 1000
         }
     }
-    chnageSalary = () => {
-        this.setState ({salary : this.state.salary + 1000})
+    chnageSalary = (extra) => {
+        this.setState({ salary: this.state.salary + extra })
     }
     render() {
         return (
             <div>
                 {/* <h1>{this.state.salary}</h1> */}
-                <Test2Child amount = {this.state.salary}
-                            increment = {this.chnageSalary}/>
+                <Test2Child amount={this.state.salary}
+                    increment={this.chnageSalary}/>
             </div>
         )
     }

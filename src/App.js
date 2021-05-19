@@ -5,16 +5,25 @@ import State from './components/State';
 import Derived from './components/Derived';
 import Test1 from "./components/Test1"
 import Test2 from './components/Test2';
+import Parent from './components/Parent'
+import Condition from './components/Condition';
+import LoginControl from './components/LoginControl'
+// import { Present,Button } from './components/Button';
 class App extends Component {
   render() {
     return (
       <div className='App'>
         
-        <Timer name="Timer" />
+        {/* <Timer name="Timer" />
         <State />
         <Derived />
         <Test1 />
-        <Test2 />
+        <Test2 /> 
+        <Parent /> */}
+        {/* <Present />
+        <Button /> */}
+        {/* <Condition /> */}
+        <LoginControl />
       </div>
     )
   }
