@@ -6,25 +6,25 @@ export class Timer extends Component {
 
     constructor(props) {           //without props it will run here
         console.log("constructor")
-        super();
-        console.log(this.prop)     //when we want to use props inside the constructor 
+        super(props);
+        // console.log(this.prop)     //when we want to use props inside the constructor 
         // we want to pass the props inside the super
-        this.setState = {
-            name: "Timer"   //it says the name will have null value error
-        }
+        // this.setState = {
+        //     name: "Timer"   //it says the name will have null value error
+        // }
         this.state = {
             date: new Date()
         };
 
     }
-    componentWillMount() {
-        console.log('will mount')    //willmount deprecated all process under will mount done at didmount or main concstructor
-    }
+    // componentWillMount() {
+    //     console.log('will mount')    //willmount deprecated all process under will mount done at didmount or main concstructor
+    // }
 
     componentDidMount() {
         console.log("did mount");
 
-        this.state = { date: new Date() };  //no direct mutation for state
+        // this.state = { date: new Date() };  //no direct mutation for state
         this.timerID = setInterval(
             () => this.tick(), 1000
         );
@@ -59,7 +59,7 @@ export class Timer extends Component {
             <div>
                 <h1>{this.props.name}</h1>
                 <h2>{this.state.date.toLocaleTimeString()}</h2>
-                <button onClick={this.componentWillUnmount.bind(this)}>click to stop</button> //Q
+                <button onClick={this.componentWillUnmount.bind(this)}>click to stop</button> 
                 <button onClick={this.changeState}>change name</button>
             </div>
         )
