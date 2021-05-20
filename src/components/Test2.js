@@ -16,7 +16,7 @@ class Test2 extends Component {
             <div>
                 {/* <h1>{this.state.salary}</h1> */}
                 <Test2Child amount={this.state.salary}
-                    increment={this.chnageSalary}/>
+                    increment={this.chnageSalary} />
             </div>
         )
     }

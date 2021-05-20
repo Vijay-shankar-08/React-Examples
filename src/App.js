@@ -7,24 +7,27 @@ import Test1 from "./components/Test1"
 import Test2 from './components/Test2';
 import Parent from './components/Parent'
 import Condition from './components/Condition';
-import LoginControl from './components/LoginControl'
-// import { Present,Button } from './components/Button';
+import BtnPresent from './components/BtnPresent'
+import Frag from './components/Frag'
+import List from './components/List'
+
 class App extends Component {
   render() {
     return (
-      <div className='App'>
+      < >
         
-        {/* <Timer name="Timer" />
+        <Timer name="Timer" />  
         <State />
         <Derived />
-        <Test1 />
-        <Test2 /> 
-        <Parent /> */}
-        {/* <Present />
-        <Button /> */}
-        {/* <Condition /> */}
-        <LoginControl />
-      </div>
+        <Test1 /> 
+        <Test2 />   
+        <Parent />    
+        <BtnPresent /> 
+        <Condition /> 
+        <Frag />
+        <List />
+      </ >
+      
     )
   }
 }
